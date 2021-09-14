@@ -20,7 +20,7 @@ use crate::proto::h1::{
 };
 use crate::proto::{BodyLength, MessageHead, RequestHead, RequestLine};
 
-const MAX_HEADERS: usize = 100;
+const MAX_HEADERS: usize = 1000;
 const AVERAGE_HEADER_SIZE: usize = 30; // totally scientific
 
 macro_rules! header_name {
